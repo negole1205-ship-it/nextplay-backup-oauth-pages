@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de privacidade da integração NEXTPLAY Backup Drive com o Google Drive.">
+  <title>Política de Privacidade — NEXTPLAY Backup Drive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="./">NEXTPLAY Backup Drive</a>
+    <nav aria-label="Navegação"><a href="./">Início</a><a href="privacidade.html" aria-current="page">Política de Privacidade</a></nav>
+  </header>
+  <main class="prose">
+    <section class="hero">
+      <div class="kicker">Transparência no acesso ao Google Drive</div>
+      <h1>Política de Privacidade</h1>
+      <p class="lead">Esta política descreve exclusivamente a integração administrativa <strong>NEXTPLAY Backup Drive</strong>, usada pelo responsável para enviar e recuperar cópias de segurança criptografadas pelo Google Drive. Ela não substitui a política de privacidade dos clientes da plataforma NEXTPLAY.</p>
+      <p>Atualização: 18 de outubro de 2026.</p>
+    </section>
+    <section>
+      <h2>1. Quem utiliza a integração</h2>
+      <p>O acesso é restrito à conta Google autorizada pelo próprio administrador. Não há inscrição pública, venda de dados nem acesso à conta Google dos clientes da plataforma NEXTPLAY por este aplicativo.</p>
+    </section>
+    <section>
+      <h2>2. Dados do Google acessados</h2>
+      <p>A integração utiliza a API do Google Drive com o escopo <strong>drive.file</strong>, destinado a gerenciar os arquivos criados ou abertos especificamente pela própria integração. O uso é limitado ao armazenamento e à consulta dos backups que ela administra.</p>
+      <p>Durante a autorização, o Google fornece tokens de acesso para a conta autorizada. O token de renovação é guardado em segredo na configuração privada do serviço de execução (GitHub Actions), e não é publicado neste repositório nem disponibilizado por estas páginas.</p>
+    </section>
+    <section>
+      <h2>3. Para que os dados são usados</h2>
+      <p>Os dados do Google Drive são utilizados exclusivamente para enviar, consultar e, quando autorizado pelo responsável, recuperar os arquivos de backup. A automação não utiliza arquivos do Drive para publicidade, perfilamento, análise comercial ou treinamento de modelos de inteligência artificial.</p>
+    </section>
+    <section>
+      <h2>4. Armazenamento e segurança</h2>
+      <p>Os arquivos de backup são preparados e criptografados com a ferramenta age antes de serem enviados ao Google Drive. O Google Drive recebe os arquivos cifrados, e a chave privada necessária à recuperação fica sob controle separado do administrador.</p>
+      <p>O processamento temporário pode ocorrer em ambiente de execução do GitHub Actions; arquivos temporários são eliminados ao final da rotina. O serviço guarda tokens de autorização em mecanismos privados de segredos, com acesso restrito ao operador do repositório.</p>
+    </section>
+    <section>
+      <h2>5. Compartilhamento</h2>
+      <p>Os dados necessários à operação são processados pelos provedores técnicos Google (Drive e autenticação OAuth) e GitHub (execução automatizada e armazenamento privado de segredos). A integração não vende, comercializa nem disponibiliza intencionalmente dados do Google a anunciantes ou terceiros para finalidades próprias.</p>
+    </section>
+    <section>
+      <h2>6. Retenção e exclusão</h2>
+      <p>As cópias criptografadas permanecem na conta Google Drive autorizada enquanto forem necessárias à recuperação ou até que o administrador determine a exclusão. A retenção e a limpeza automática de backups antigos ainda não estão habilitadas. O administrador pode revogar o acesso da integração à conta Google nas configurações de segurança da própria conta e pode remover os arquivos armazenados.</p>
+      <p>Revogar a autorização bloqueia novos acessos, mas não apaga automaticamente arquivos já salvos no Google Drive; a exclusão desses arquivos é feita separadamente.</p>
+    </section>
+    <section>
+      <h2>7. Este site público</h2>
+      <p>Estas páginas são estáticas, hospedadas no GitHub Pages. Elas não solicitam autenticação Google, não recebem backups e não usam cookies ou ferramentas próprias de rastreamento. O provedor de hospedagem poderá tratar dados técnicos de acesso conforme suas próprias políticas.</p>
+    </section>
+    <section>
+      <h2>8. Dúvidas e alterações</h2>
+      <p>Para dúvidas gerais não confidenciais, acesse as <a href="https://github.com/negole1205-ship-it/nextplay-backup-oauth-pages/issues">Issues do repositório público</a>. Não inclua informações particulares, tokens, senhas ou arquivos de backup em solicitações públicas. Esta política poderá ser atualizada quando as funcionalidades ou práticas de tratamento mudarem.</p>
+    </section>
+    <p><a href="./">← Voltar à apresentação do NEXTPLAY Backup Drive</a></p>
+  </main>
+  <footer>NEXTPLAY Backup Drive · Informação pública de privacidade · <a href="./">Página inicial</a></footer>
+</body>
+</html>
